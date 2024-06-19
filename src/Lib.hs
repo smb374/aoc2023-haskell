@@ -12,6 +12,7 @@ import Day07 (Day07 (Day07))
 import Day08 (Day08 (Day08))
 import Day09 (Day09 (Day09))
 import Day10 (Day10 (Day10))
+import Day11 (Day11 (Day11))
 
 intToFuncs :: Int -> Maybe (FilePath, ByteString -> Int, ByteString -> Int)
 intToFuncs 1 = Just (inputPath Day01, part1 Day01, part2 Day01)
@@ -24,4 +25,5 @@ intToFuncs 7 = Just (inputPath Day07, part1 Day07, part2 Day07)
 intToFuncs 8 = Just (inputPath Day08, part1 Day08, part2 Day08)
 intToFuncs 9 = Just (inputPath Day09, part1 Day09, part2 Day09)
 intToFuncs 10 = Just (inputPath Day10, part1 Day10, part2 Day10)
+intToFuncs 11 = Just (inputPath Day11, part1 Day11, part2 Day11)
 intToFuncs _ = Nothing
