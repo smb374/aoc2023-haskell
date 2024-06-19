@@ -1,0 +1,27 @@
+module Lib (intToFuncs) where
+
+import Classes (Day (..))
+import Data.ByteString (ByteString)
+import Day01 (Day01 (Day01))
+import Day02 (Day02 (Day02))
+import Day03 (Day03 (Day03))
+import Day04 (Day04 (Day04))
+import Day05 (Day05 (Day05))
+import Day06 (Day06 (Day06))
+import Day07 (Day07 (Day07))
+import Day08 (Day08 (Day08))
+import Day09 (Day09 (Day09))
+import Day10 (Day10 (Day10))
+
+intToFuncs :: Int -> Maybe (FilePath, ByteString -> Int, ByteString -> Int)
+intToFuncs 1 = Just (inputPath Day01, part1 Day01, part2 Day01)
+intToFuncs 2 = Just (inputPath Day02, part1 Day02, part2 Day02)
+intToFuncs 3 = Just (inputPath Day03, part1 Day03, part2 Day03)
+intToFuncs 4 = Just (inputPath Day04, part1 Day04, part2 Day04)
+intToFuncs 5 = Just (inputPath Day05, part1 Day05, part2 Day05)
+intToFuncs 6 = Just (inputPath Day06, part1 Day06, part2 Day06)
+intToFuncs 7 = Just (inputPath Day07, part1 Day07, part2 Day07)
+intToFuncs 8 = Just (inputPath Day08, part1 Day08, part2 Day08)
+intToFuncs 9 = Just (inputPath Day09, part1 Day09, part2 Day09)
+intToFuncs 10 = Just (inputPath Day10, part1 Day10, part2 Day10)
+intToFuncs _ = Nothing
